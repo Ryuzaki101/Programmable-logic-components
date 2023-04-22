@@ -1,0 +1,47 @@
+MDF Database:  version 1.0
+MDF_INFO | Aufgabe1 | XC9536XL-5-PC44
+MACROCELL | 0 | 3 | Y_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 7 | SEL<1>  | A  | B  | SEL<0>  | SEL<2>  | EXP4_.EXP  | EXP5_.EXP
+INPUTMC | 2 | 0 | 2 | 0 | 4
+INPUTP | 5 | 34 | 42 | 46 | 47 | 6
+IMPORTS | 2 | 0 | 2 | 0 | 4
+EQ | 11 | 
+   Y = SEL<1> & A & !B & !SEL<0>
+	# SEL<1> & !A & B & !SEL<0>
+	# SEL<1> & !A & !SEL<2> & SEL<0>
+	# A & !B & !SEL<2> & SEL<0>
+	# !A & B & !SEL<2> & SEL<0>
+;Imported pterms FB1_3
+	# SEL<1> & SEL<2> & !SEL<0>
+	# !SEL<1> & !A & !B & SEL<2>
+;Imported pterms FB1_5
+	# !SEL<1> & A & B & !SEL<2>
+	# !SEL<1> & A & B & SEL<0>;
+
+MACROCELL | 0 | 2 | EXP4_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 5 | SEL<1>  | SEL<2>  | SEL<0>  | A  | B
+INPUTP | 5 | 34 | 6 | 47 | 42 | 46
+EXPORTS | 1 | 0 | 3
+EQ | 2 | 
+       EXP4_.EXP  =  SEL<1> & SEL<2> & !SEL<0>
+	# !SEL<1> & !A & !B & SEL<2>
+
+MACROCELL | 0 | 4 | EXP5_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 5 | SEL<1>  | A  | B  | SEL<2>  | SEL<0>
+INPUTP | 5 | 34 | 42 | 46 | 6 | 47
+EXPORTS | 1 | 0 | 3
+EQ | 2 | 
+       EXP5_.EXP  =  !SEL<1> & A & B & !SEL<2>
+	# !SEL<1> & A & B & SEL<0>
+
+PIN | SEL<1> | 64 | 0 | N/A | 34 | 3 | 0 | 3 | 0 | 2 | 0 | 4
+PIN | A | 64 | 0 | N/A | 42 | 3 | 0 | 3 | 0 | 2 | 0 | 4
+PIN | B | 64 | 0 | N/A | 46 | 3 | 0 | 3 | 0 | 2 | 0 | 4
+PIN | SEL<2> | 64 | 0 | N/A | 6 | 3 | 0 | 3 | 0 | 2 | 0 | 4
+PIN | SEL<0> | 64 | 0 | N/A | 47 | 3 | 0 | 3 | 0 | 2 | 0 | 4
+PIN | Y | 536871040 | 0 | N/A | 9

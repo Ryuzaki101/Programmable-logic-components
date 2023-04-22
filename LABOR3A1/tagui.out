@@ -1,0 +1,11 @@
+analysisType: performanceToTimeSpec
+ignoreNets: 
+ignoreTimeSpecs: 
+selectNets: 
+delaysGreaterThan: 0.000000
+reportPathsFailingTimeSpec: 0
+reportWidth: normal
+maxPathsPerTimeSpec: 3
+sortOn: descendingDelay
+reportPathsWithNoTimeSpec: 0
+longestPathsOnly: 0

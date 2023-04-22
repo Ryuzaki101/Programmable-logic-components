@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/m/Desktop/OH/PLB/LABOR/kaka/KAAKSA_isim_beh.exe" -prj "C:/Users/m/Desktop/OH/PLB/LABOR/kaka/KAAKSA_beh.prj" "work.KAAKSA" 

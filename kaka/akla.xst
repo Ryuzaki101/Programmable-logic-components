@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/m/Desktop/OH/PLB/LABOR/kaka/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/m/Desktop/OH/PLB/LABOR/kaka/xst"
+elaborate
+-ifn akla.prj
+-ifmt mixed

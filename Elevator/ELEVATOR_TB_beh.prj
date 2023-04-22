@@ -1,0 +1,4 @@
+vhdl work "WATCHDOG.vhd"
+vhdl work "SPI_RX.vhd"
+vhdl work "ELEVATOR.vhd"
+vhdl work "ELEVATOR_TB.vhd"

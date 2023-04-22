@@ -1,0 +1,2 @@
+vhdl work "WDT.vhd"
+vhdl work "WDT_TB.vhd"

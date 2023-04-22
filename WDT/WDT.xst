@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/WDT/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/WDT/xst"
+elaborate
+-ifn WDT.prj
+-ifmt mixed

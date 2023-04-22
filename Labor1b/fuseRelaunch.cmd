@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Labor1b/LATCH_MUX_TB_isim_beh.exe" -prj "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Labor1b/LATCH_MUX_TB_beh.prj" "work.LATCH_MUX_TB" 

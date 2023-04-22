@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/Labor/Desktop/Labor3/WDT/WDT.xst" -ofn "C:/Users/Labor/Desktop/Labor3/WDT/WDT.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9536-PC44-15 WDT.ngc WDT.ngd  
+cpldfit -intstyle ise -p xc9536-15-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk WDT.ngd 
+XSLTProcess WDT_build.xml 
+tsim -intstyle ise WDT WDT.nga 
+taengine -intstyle ise -f WDT -w --format html1 -l WDT_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n WDT -i WDT 
+xst -intstyle ise -ifn "C:/Users/Labor/Desktop/Labor3/WDT/WDT.xst" -ofn "C:/Users/Labor/Desktop/Labor3/WDT/WDT.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9536-PC44-15 WDT.ngc WDT.ngd  
+cpldfit -intstyle ise -p xc9536-15-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk WDT.ngd 
+XSLTProcess WDT_build.xml 
+tsim -intstyle ise WDT WDT.nga 
+hprep6 -s IEEE1149 -n WDT -i WDT 
+xst -intstyle ise -ifn "E:/PLB_2015/Labor3_Auf2/WDT/WDT.xst" -ofn "E:/PLB_2015/Labor3_Auf2/WDT/WDT.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc E:/PLB_2015/WDT.ucf -p xc9536-PC44-15 WDT.ngc WDT.ngd  
+cpldfit -intstyle ise -p xc9536-15-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk WDT.ngd 
+XSLTProcess WDT_build.xml 
+tsim -intstyle ise WDT WDT.nga 
+hprep6 -s IEEE1149 -n WDT -i WDT 

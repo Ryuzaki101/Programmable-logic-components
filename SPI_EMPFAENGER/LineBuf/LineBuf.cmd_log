@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/LineBuf/LineBuf.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/LineBuf/LineBuf.syr" 

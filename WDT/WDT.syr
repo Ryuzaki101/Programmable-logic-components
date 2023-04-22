@@ -1,0 +1,211 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: WDT.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "WDT.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "WDT"
+Output Format                      : NGC
+Target Device                      : XC9500 CPLDs
+
+---- Source Options
+Top Module Name                    : WDT
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/WDT is now defined in a different file.  It was defined in "C:/Users/Labor/Desktop/Labor3/WDT/WDT.vhd", and is now defined in "E:/PLB_2015/Labor3_Auf2/WDT/WDT.vhd".
+WARNING:HDLParsers:3607 - Unit work/WDT/Behavioral is now defined in a different file.  It was defined in "C:/Users/Labor/Desktop/Labor3/WDT/WDT.vhd", and is now defined in "E:/PLB_2015/Labor3_Auf2/WDT/WDT.vhd".
+Compiling vhdl file "E:/PLB_2015/Labor3_Auf2/WDT/WDT.vhd" in Library work.
+Entity <wdt> compiled.
+Entity <wdt> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <WDT> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <WDT> in library <work> (Architecture <behavioral>).
+Entity <WDT> analyzed. Unit <WDT> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <WDT>.
+    Related source file is "E:/PLB_2015/Labor3_Auf2/WDT/WDT.vhd".
+    Found 1-bit register for signal <o_RESET>.
+    Found 1-bit register for signal <temp_cnt1>.
+    Found 1-bit register for signal <temp_cnt2>.
+    Found 8-bit down counter for signal <temp_value>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <WDT> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit down counter                                    : 1
+# Registers                                            : 3
+ 1-bit register                                        : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit down counter                                    : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <WDT> ...
+  implementation constraint: INIT=r	 : temp_cnt1
+  implementation constraint: INIT=r	 : temp_cnt2
+  implementation constraint: INIT=r	 : temp_value_7
+  implementation constraint: INIT=r	 : temp_value_6
+  implementation constraint: INIT=r	 : temp_value_0
+  implementation constraint: INIT=r	 : temp_value_1
+  implementation constraint: INIT=r	 : temp_value_2
+  implementation constraint: INIT=r	 : temp_value_3
+  implementation constraint: INIT=r	 : temp_value_4
+  implementation constraint: INIT=r	 : temp_value_5
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : WDT.ngr
+Top Level Output File Name         : WDT
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : XC9500 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 98
+#      AND2                        : 32
+#      AND3                        : 1
+#      AND8                        : 1
+#      INV                         : 34
+#      OR2                         : 23
+#      XOR2                        : 7
+# FlipFlops/Latches                : 11
+#      FD                          : 11
+# IO Buffers                       : 12
+#      IBUF                        : 11
+#      OBUF                        : 1
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.76 secs
+ 
+--> 
+
+Total memory usage is 249536 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

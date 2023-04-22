@@ -1,0 +1,29 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_Q: FDCPE port map (Q,'0','0',Q_CLR,state/state_SETF);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q_CLR <= (CLK AND R AND NOT S);
+</td></tr><tr><td>
+FDCPE_Qbar: FDCPE port map (Qbar,'1','0',state/state_SETF,Qbar_PRE);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qbar_PRE <= (CLK AND R AND NOT S);
+</td></tr><tr><td>
+</td></tr><tr><td>
+state/state_SETF <= ((CLK AND R AND S)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CLK AND NOT R AND NOT S));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

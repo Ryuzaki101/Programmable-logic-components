@@ -1,0 +1,2 @@
+vhdl isim_temp "LATCH_MUX.vhd"
+vhdl isim_temp "LATCH_MUX_TB.vhd"

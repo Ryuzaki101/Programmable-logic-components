@@ -1,0 +1,2 @@
+vhdl work "SPI_RX.vhd"
+vhdl work "SPI_RX_TB.vhd"

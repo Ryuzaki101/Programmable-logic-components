@@ -1,0 +1,25 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1_isim_beh.exe -prj C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1_beh.prj work.aufg1 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+ERROR:HDLCompiler:488 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 62: Illegal identifier : _period
+ERROR:HDLCompiler:488 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 75: Illegal identifier : _process
+ERROR:HDLCompiler:488 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 78: Illegal identifier : _period
+ERROR:HDLCompiler:488 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 80: Illegal identifier : _period
+ERROR:HDLCompiler:488 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 90: Illegal identifier : _period
+Parsing VHDL file "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufgabe1.vhd" into library work
+Parsing VHDL file "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" into library work
+ERROR:HDLCompiler:806 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 62: Syntax error near "<".
+ERROR:HDLCompiler:488 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 62: Illegal identifier : _period
+ERROR:HDLCompiler:806 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 75: Syntax error near "<".
+ERROR:HDLCompiler:488 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 75: Illegal identifier : _process
+ERROR:HDLCompiler:806 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 77: Syntax error near "<".
+ERROR:HDLCompiler:488 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 78: Illegal identifier : _period
+ERROR:HDLCompiler:488 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 80: Illegal identifier : _period
+WARNING:HDLCompiler:1369 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 75: Possible infinite loop; process does not have a wait statement
+ERROR:HDLCompiler:806 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 90: Syntax error near "<".
+ERROR:HDLCompiler:488 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 90: Illegal identifier : _period
+WARNING:HDLCompiler:1369 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 85: Possible infinite loop; process does not have a wait statement
+ERROR:HDLCompiler:854 - "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd" Line 38: Unit <behavior> ignored due to previous errors.
+VHDL file C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd ignored due to errors

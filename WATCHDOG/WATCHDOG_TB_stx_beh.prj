@@ -1,0 +1,2 @@
+vhdl isim_temp "WATCHDOG.vhd"
+vhdl isim_temp "WATCHDOG_TB.vhd"

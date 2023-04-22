@@ -1,0 +1,18 @@
+Pin Freeze File:  version P.20131013
+
+9536XL44PC XC9536XL-5-PC44
+Clk S:PIN36
+R S:PIN37
+S S:PIN34
+Q S:PIN44
+Qn S:PIN3
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_2 Qn_OBUF
+
+PARTITION FB2_2 O
+
+

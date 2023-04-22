@@ -1,0 +1,3 @@
+work	"ELEVATOR.vhd"
+work	"SPI_RX.vhd"
+work	"WATCHDOG.vhd"

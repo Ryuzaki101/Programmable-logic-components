@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3AUFGABE1/TAKTDIVIDER_TB_isim_beh.exe" -prj "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3AUFGABE1/TAKTDIVIDER_TB_beh.prj" "work.TAKTDIVIDER_TB" 

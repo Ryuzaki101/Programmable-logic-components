@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/m/Desktop/OH/PLB/LABOR/WATCHDOG/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/m/Desktop/OH/PLB/LABOR/WATCHDOG/xst"
+elaborate
+-ifn WATCHDOG.prj
+-ifmt mixed

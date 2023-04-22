@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3AUFGABE1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3AUFGABE1/xst"
+elaborate
+-ifn TAKTDIVIDER.prj
+-ifmt mixed

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/m/Desktop/OH/PLB/LABOR/empfaenger/SPI_RX_TSB_isim_beh.exe" -prj "C:/Users/m/Desktop/OH/PLB/LABOR/empfaenger/SPI_RX_TSB_beh.prj" "work.SPI_RX_TSB" 

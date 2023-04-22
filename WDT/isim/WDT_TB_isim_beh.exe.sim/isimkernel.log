@@ -1,0 +1,29 @@
+Command line:
+   WDT_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  65194
+
+Fri Nov 13 15:12:33 2015
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 361.644 Meg
+
+ Total Signals          : 13
+ Total Nets             : 22
+ Total Signal Drivers   : 8
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 4
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 507
+Total Line Count : 30
+
+ Total Simulation Time: 14.375 sec
+
+ Current Memory Usage: 361.644 Meg
+
+Fri Nov 13 15:16:19 2015
+

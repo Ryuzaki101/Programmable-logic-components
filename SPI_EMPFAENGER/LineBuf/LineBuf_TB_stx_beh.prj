@@ -1,0 +1,4 @@
+vhdl isim_temp "ipcore_dir/FIFO.vhd"
+vhdl isim_temp "ipcore_dir/Multiply.vhd"
+vhdl isim_temp "LineBuf.vhd"
+vhdl isim_temp "LineBuf_TB.vhd"

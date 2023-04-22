@@ -1,0 +1,916 @@
+NDS Database:  version P.68d
+
+NDS_INFO | xc9500 | 953644PC | XC9536-15-PC44
+
+DEVICE | 9536 | 953644PC | 
+
+NETWORK | WDT | 0 | 0 | 201342983
+
+INPUT_INSTANCE | 0 | 0 | NULL | LOAD_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | LOAD | 1487 | PI | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | CLK_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CLK | 1488 | PI | 108 | 0 | WDT_COPY_0_COPY_0 | CLK;CLK;CLK | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | VALUE_0_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | VALUE<0> | 1490 | PI | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | VALUE_0_IBUF | 1477 | ? | 110 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_0_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Inv+PrldLow+OptxMapped | temp_value<0> | WDT_COPY_0_COPY_0 | 2155873536 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_0_IBUF | 1477 | ? | 110 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | temp_value<0>.SI | temp_value<0> | 0 | 12 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_0_IBUF | 1477 | ? | 110 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | temp_value<0>.D1 | 1499 | ? | 110 | 4096 | temp_value<0> | NULL | NULL | temp_value<0>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | temp_value<0>.D2 | 1500 | ? | 110 | 4096 | temp_value<0> | NULL | NULL | temp_value<0>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | LOAD_IBUF | IV_FALSE | VALUE_0_IBUF
+SPPTERM | 3 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_cnt1
+SPPTERM | 3 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_TRUE | temp_cnt2
+SPPTERM | 4 | IV_FALSE | LOAD_IBUF | IV_TRUE | temp_value<0> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+SPPTERM | 9 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_FALSE | temp_value<4> | IV_FALSE | temp_value<5> | IV_FALSE | temp_value<6> | IV_FALSE | temp_value<7>
+
+SRFF_INSTANCE | temp_value<0>.REG | temp_value<0> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | temp_value<0>.D | 1498 | ? | 110 | 0 | temp_value<0> | NULL | NULL | temp_value<0>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | temp_value<0>.Q | 1501 | ? | 121 | 0 | temp_value<0> | NULL | NULL | temp_value<0>.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | VALUE_1_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | VALUE<1> | 1491 | PI | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | VALUE_1_IBUF | 1478 | ? | 112 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_1_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Inv+PrldLow+OptxMapped | temp_value<1> | WDT_COPY_0_COPY_0 | 2155873536 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_1_IBUF | 1478 | ? | 112 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4>.EXP | 1564 | ? | 112 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.EXP | temp_value<4> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | temp_value<1>.SI | temp_value<1> | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_1_IBUF | 1478 | ? | 112 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4>.EXP | 1564 | ? | 112 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.EXP | temp_value<4> | 4 | 0 | MC_EXPORT
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | temp_value<1>.D1 | 1503 | ? | 112 | 4096 | temp_value<1> | NULL | NULL | temp_value<1>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | temp_value<1>.D2 | 1504 | ? | 112 | 4096 | temp_value<1> | NULL | NULL | temp_value<1>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | temp_value<4>.EXP
+SPPTERM | 2 | IV_TRUE | LOAD_IBUF | IV_FALSE | VALUE_1_IBUF
+SPPTERM | 3 | IV_FALSE | LOAD_IBUF | IV_TRUE | temp_value<0> | IV_FALSE | temp_value<1>
+SPPTERM | 3 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<1> | IV_FALSE | temp_cnt1
+SPPTERM | 3 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<1> | IV_TRUE | temp_cnt2
+SPPTERM | 5 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_TRUE | temp_value<1> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+
+SRFF_INSTANCE | temp_value<1>.REG | temp_value<1> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | temp_value<1>.D | 1502 | ? | 112 | 0 | temp_value<1> | NULL | NULL | temp_value<1>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | temp_value<1>.Q | 1505 | ? | 121 | 0 | temp_value<1> | NULL | NULL | temp_value<1>.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | VALUE_2_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | VALUE<2> | 1492 | PI | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | VALUE_2_IBUF | 1479 | ? | 113 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_2_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Inv+PrldLow+OptxMapped | temp_value<2> | WDT_COPY_0_COPY_0 | 2155873536 | 11 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_2_IBUF | 1479 | ? | 113 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP0_.EXP | 1562 | ? | 113 | 0 | WDT_COPY_0_COPY_0 | NULL | EXP0_.EXP | EXP0_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | temp_value<2>.EXP | 1561 | ? | 114 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.EXP | temp_value<2> | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | temp_value<2>.SI | temp_value<2> | 0 | 10 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_2_IBUF | 1479 | ? | 113 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP0_.EXP | 1562 | ? | 113 | 0 | WDT_COPY_0_COPY_0 | NULL | EXP0_.EXP | EXP0_ | 4 | 0 | MC_EXPORT
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | temp_value<2>.D1 | 1507 | ? | 113 | 4096 | temp_value<2> | NULL | NULL | temp_value<2>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | temp_value<2>.D2 | 1508 | ? | 113 | 4096 | temp_value<2> | NULL | NULL | temp_value<2>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EXP0_.EXP
+SPPTERM | 2 | IV_TRUE | LOAD_IBUF | IV_FALSE | VALUE_2_IBUF
+SPPTERM | 3 | IV_FALSE | LOAD_IBUF | IV_TRUE | temp_value<0> | IV_FALSE | temp_value<2>
+SPPTERM | 3 | IV_FALSE | LOAD_IBUF | IV_TRUE | temp_value<1> | IV_FALSE | temp_value<2>
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | temp_value<2>.EXP | 1557 | ? | 114 | 0 | temp_value<2> | NULL | NULL | temp_value<2>.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 7 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_TRUE | temp_value<6> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+SPPTERM | 7 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_TRUE | temp_value<7> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+
+SRFF_INSTANCE | temp_value<2>.REG | temp_value<2> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | temp_value<2>.D | 1506 | ? | 113 | 0 | temp_value<2> | NULL | NULL | temp_value<2>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | temp_value<2>.Q | 1509 | ? | 121 | 0 | temp_value<2> | NULL | NULL | temp_value<2>.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | VALUE_3_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | VALUE<3> | 1493 | PI | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | VALUE_3_IBUF | 1480 | ? | 114 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_3_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | temp_value<3> | WDT_COPY_0_COPY_0 | 2155877376 | 12 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_3_IBUF | 1480 | ? | 114 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2>.EXP | 1561 | ? | 114 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.EXP | temp_value<2> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | temp_value<3>.SI | temp_value<3> | 0 | 11 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_3_IBUF | 1480 | ? | 114 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2>.EXP | 1561 | ? | 114 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.EXP | temp_value<2> | 4 | 0 | MC_EXPORT
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | temp_value<3>.D1 | 1511 | ? | 114 | 4096 | temp_value<3> | NULL | NULL | temp_value<3>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | temp_value<3>.D2 | 1512 | ? | 114 | 4096 | temp_value<3> | NULL | NULL | temp_value<3>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | temp_value<2>.EXP
+SPPTERM | 3 | IV_TRUE | LOAD_IBUF | IV_TRUE | temp_value<3> | IV_FALSE | VALUE_3_IBUF
+SPPTERM | 3 | IV_TRUE | LOAD_IBUF | IV_FALSE | temp_value<3> | IV_TRUE | VALUE_3_IBUF
+SPPTERM | 7 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_TRUE | temp_value<3> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+SPPTERM | 7 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_TRUE | temp_value<4> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+SPPTERM | 7 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_TRUE | temp_value<5> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+
+SRFF_INSTANCE | temp_value<3>.REG | temp_value<3> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | temp_value<3>.D | 1510 | ? | 114 | 0 | temp_value<3> | NULL | NULL | temp_value<3>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | temp_value<3>.Q | 1513 | ? | 121 | 0 | temp_value<3> | NULL | NULL | temp_value<3>.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | VALUE_4_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | VALUE<4> | 1494 | PI | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | VALUE_4_IBUF | 1481 | ? | 115 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_4_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | temp_value<4> | WDT_COPY_0_COPY_0 | 2155877376 | 14 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_4_IBUF | 1481 | ? | 115 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP1_.EXP | 1563 | ? | 115 | 0 | WDT_COPY_0_COPY_0 | NULL | EXP1_.EXP | EXP1_ | 4 | 0 | MC_EXPORT
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | temp_value<4>.EXP | 1564 | ? | 112 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.EXP | temp_value<4> | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | temp_value<4>.SI | temp_value<4> | 0 | 13 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_4_IBUF | 1481 | ? | 115 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP1_.EXP | 1563 | ? | 115 | 0 | WDT_COPY_0_COPY_0 | NULL | EXP1_.EXP | EXP1_ | 4 | 0 | MC_EXPORT
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | temp_value<4>.D1 | 1515 | ? | 115 | 4096 | temp_value<4> | NULL | NULL | temp_value<4>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | temp_value<4>.D2 | 1516 | ? | 115 | 4096 | temp_value<4> | NULL | NULL | temp_value<4>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EXP1_.EXP
+SPPTERM | 3 | IV_TRUE | LOAD_IBUF | IV_TRUE | temp_value<4> | IV_FALSE | VALUE_4_IBUF
+SPPTERM | 3 | IV_TRUE | LOAD_IBUF | IV_FALSE | temp_value<4> | IV_TRUE | VALUE_4_IBUF
+SPPTERM | 8 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_TRUE | temp_value<4> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+SPPTERM | 8 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_TRUE | temp_value<5> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | temp_value<4>.EXP | 1560 | ? | 112 | 0 | temp_value<4> | NULL | NULL | temp_value<4>.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 8 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_FALSE | temp_value<4> | IV_FALSE | temp_value<5> | IV_FALSE | temp_value<6> | IV_FALSE | temp_value<7>
+
+SRFF_INSTANCE | temp_value<4>.REG | temp_value<4> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | temp_value<4>.D | 1514 | ? | 115 | 0 | temp_value<4> | NULL | NULL | temp_value<4>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | temp_value<4>.Q | 1517 | ? | 121 | 0 | temp_value<4> | NULL | NULL | temp_value<4>.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | VALUE_5_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | VALUE<5> | 1495 | PI | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | VALUE_5_IBUF | 1482 | ? | 116 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_5_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | temp_value<5> | WDT_COPY_0_COPY_0 | 2155877376 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_5_IBUF | 1482 | ? | 116 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_5_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | temp_value<5>.SI | temp_value<5> | 0 | 12 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_5_IBUF | 1482 | ? | 116 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_5_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | temp_value<5>.D1 | 1519 | ? | 116 | 4096 | temp_value<5> | NULL | NULL | temp_value<5>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | temp_value<5>.D2 | 1520 | ? | 116 | 4096 | temp_value<5> | NULL | NULL | temp_value<5>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | LOAD_IBUF | IV_TRUE | temp_value<5> | IV_FALSE | VALUE_5_IBUF
+SPPTERM | 3 | IV_TRUE | LOAD_IBUF | IV_FALSE | temp_value<5> | IV_TRUE | VALUE_5_IBUF
+SPPTERM | 9 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_FALSE | temp_value<4> | IV_TRUE | temp_value<5> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+SPPTERM | 9 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_FALSE | temp_value<4> | IV_TRUE | temp_value<6> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+SPPTERM | 9 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_FALSE | temp_value<4> | IV_TRUE | temp_value<7> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+
+SRFF_INSTANCE | temp_value<5>.REG | temp_value<5> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | temp_value<5>.D | 1518 | ? | 116 | 0 | temp_value<5> | NULL | NULL | temp_value<5>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | temp_value<5>.Q | 1521 | ? | 121 | 0 | temp_value<5> | NULL | NULL | temp_value<5>.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | VALUE_6_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | VALUE<6> | 1496 | PI | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | VALUE_6_IBUF | 1483 | ? | 117 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_6_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | temp_value<6> | WDT_COPY_0_COPY_0 | 2155877376 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_6_IBUF | 1483 | ? | 117 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_6_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | temp_value<6>.SI | temp_value<6> | 0 | 12 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_6_IBUF | 1483 | ? | 117 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | temp_value<6>.D1 | 1523 | ? | 117 | 4096 | temp_value<6> | NULL | NULL | temp_value<6>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | temp_value<6>.D2 | 1524 | ? | 117 | 4096 | temp_value<6> | NULL | NULL | temp_value<6>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | LOAD_IBUF | IV_TRUE | temp_value<6> | IV_FALSE | VALUE_6_IBUF
+SPPTERM | 3 | IV_TRUE | LOAD_IBUF | IV_FALSE | temp_value<6> | IV_TRUE | VALUE_6_IBUF
+SPPTERM | 10 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_FALSE | temp_value<4> | IV_FALSE | temp_value<5> | IV_TRUE | temp_value<6> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+SPPTERM | 10 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_FALSE | temp_value<4> | IV_FALSE | temp_value<5> | IV_TRUE | temp_value<7> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+
+SRFF_INSTANCE | temp_value<6>.REG | temp_value<6> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | temp_value<6>.D | 1522 | ? | 117 | 0 | temp_value<6> | NULL | NULL | temp_value<6>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | temp_value<6>.Q | 1525 | ? | 121 | 0 | temp_value<6> | NULL | NULL | temp_value<6>.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | VALUE_7_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | VALUE<7> | 1497 | PI | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | VALUE_7_IBUF | 1484 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_7_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Inv+PrldLow+OptxMapped | temp_value<7> | WDT_COPY_0_COPY_0 | 2155873536 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_7_IBUF | 1484 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_7_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | temp_value<7>.SI | temp_value<7> | 0 | 12 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | VALUE_7_IBUF | 1484 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | VALUE_7_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | temp_value<7>.D1 | 1527 | ? | 118 | 4096 | temp_value<7> | NULL | NULL | temp_value<7>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | temp_value<7>.D2 | 1528 | ? | 118 | 4096 | temp_value<7> | NULL | NULL | temp_value<7>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | LOAD_IBUF | IV_FALSE | VALUE_7_IBUF
+SPPTERM | 2 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<7>
+SPPTERM | 10 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_FALSE | temp_value<4> | IV_FALSE | temp_value<5> | IV_FALSE | temp_value<6> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+
+SRFF_INSTANCE | temp_value<7>.REG | temp_value<7> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | temp_value<7>.D | 1526 | ? | 118 | 0 | temp_value<7> | NULL | NULL | temp_value<7>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | temp_value<7>.Q | 1529 | ? | 121 | 0 | temp_value<7> | NULL | NULL | temp_value<7>.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | CNT_CLK_IBUF | WDT_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CNT_CLK | 1489 | PI | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | CNT_CLK_IBUF | 1474 | ? | 119 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CNT_CLK_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | temp_cnt1 | WDT_COPY_0_COPY_0 | 2155873280 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CNT_CLK_IBUF | 1474 | ? | 119 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CNT_CLK_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | temp_cnt1.SI | temp_cnt1 | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CNT_CLK_IBUF | 1474 | ? | 119 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CNT_CLK_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | temp_cnt1.D1 | 1531 | ? | 119 | 4096 | temp_cnt1 | NULL | NULL | temp_cnt1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | temp_cnt1.D2 | 1532 | ? | 119 | 4096 | temp_cnt1 | NULL | NULL | temp_cnt1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | CNT_CLK_IBUF
+
+SRFF_INSTANCE | temp_cnt1.REG | temp_cnt1 | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | temp_cnt1.D | 1530 | ? | 119 | 0 | temp_cnt1 | NULL | NULL | temp_cnt1.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | temp_cnt1.Q | 1533 | ? | 120 | 0 | temp_cnt1 | NULL | NULL | temp_cnt1.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | temp_cnt2 | WDT_COPY_0_COPY_0 | 2155873280 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | temp_cnt2.SI | temp_cnt2 | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | temp_cnt2.D1 | 1535 | ? | 120 | 4096 | temp_cnt2 | NULL | NULL | temp_cnt2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | temp_cnt2.D2 | 1536 | ? | 120 | 4096 | temp_cnt2 | NULL | NULL | temp_cnt2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | temp_cnt1
+
+SRFF_INSTANCE | temp_cnt2.REG | temp_cnt2 | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | temp_cnt2.D | 1534 | ? | 120 | 0 | temp_cnt2 | NULL | NULL | temp_cnt2.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | temp_cnt2.Q | 1537 | ? | 118 | 0 | temp_cnt2 | NULL | NULL | temp_cnt2.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | o_RESET_OBUF | WDT_COPY_0_COPY_0 | 2155873280 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o_RESET_OBUF | 1485 | ? | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | o_RESET_OBUF.Q | o_RESET_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | o_RESET_OBUF.UIM | 1565 | ? | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | o_RESET_OBUF.Q | o_RESET_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | o_RESET_OBUF.SI | o_RESET_OBUF | 0 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o_RESET_OBUF.D1 | 1539 | ? | 121 | 4096 | o_RESET_OBUF | NULL | NULL | o_RESET_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o_RESET_OBUF.D2 | 1540 | ? | 121 | 4096 | o_RESET_OBUF | NULL | NULL | o_RESET_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 8 | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_FALSE | temp_value<4> | IV_FALSE | temp_value<5> | IV_FALSE | temp_value<6> | IV_FALSE | temp_value<7>
+
+SRFF_INSTANCE | o_RESET_OBUF.REG | o_RESET_OBUF | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o_RESET_OBUF.D | 1538 | ? | 121 | 0 | o_RESET_OBUF | NULL | NULL | o_RESET_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_IBUF/FCLK | 1465 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o_RESET_OBUF.Q | 1541 | ? | 0 | 0 | o_RESET_OBUF | NULL | NULL | o_RESET_OBUF.REG | 0 | 8 | SRFF_Q
+TNAME | CLK
+
+OUTPUT_INSTANCE | 0 | o_RESET | WDT_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o_RESET_OBUF | 1485 | ? | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | o_RESET_OBUF.Q | o_RESET_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o_RESET | 1486 | PO | 0 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | o_RESET | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | EXP0_ | WDT_COPY_0_COPY_0 | 2147483648 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP0_.EXP | 1562 | ? | 113 | 0 | WDT_COPY_0_COPY_0 | NULL | EXP0_.EXP | EXP0_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP0_.SI | EXP0_ | 0 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<4> | 1470 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<4>.Q | temp_value<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<5> | 1471 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<5>.Q | temp_value<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP0_.EXP | 1558 | ? | 113 | 0 | EXP0_ | NULL | NULL | EXP0_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 3 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<2> | IV_FALSE | temp_cnt1
+SPPTERM | 3 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<2> | IV_TRUE | temp_cnt2
+SPPTERM | 6 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_TRUE | temp_value<2> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+SPPTERM | 7 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_FALSE | temp_value<4> | IV_FALSE | temp_value<5> | IV_FALSE | temp_value<6> | IV_FALSE | temp_value<7>
+
+MACROCELL_INSTANCE | NULL | EXP1_ | WDT_COPY_0_COPY_0 | 2147483648 | 9 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP1_.EXP | 1563 | ? | 115 | 0 | WDT_COPY_0_COPY_0 | NULL | EXP1_.EXP | EXP1_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP1_.SI | EXP1_ | 0 | 9 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LOAD_IBUF | 1464 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | NULL | LOAD_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<0> | 1466 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<0>.Q | temp_value<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<1> | 1467 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<1>.Q | temp_value<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<2> | 1468 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<2>.Q | temp_value<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<3> | 1469 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<3>.Q | temp_value<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<6> | 1472 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<6>.Q | temp_value<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt1 | 1475 | ? | 120 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt1.Q | temp_cnt1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_cnt2 | 1476 | ? | 118 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_cnt2.Q | temp_cnt2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | temp_value<7> | 1473 | ? | 121 | 0 | WDT_COPY_0_COPY_0 | NULL | temp_value<7>.Q | temp_value<7> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP1_.EXP | 1559 | ? | 115 | 0 | EXP1_ | NULL | NULL | EXP1_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 8 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_TRUE | temp_value<6> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+SPPTERM | 8 | IV_FALSE | LOAD_IBUF | IV_FALSE | temp_value<0> | IV_FALSE | temp_value<1> | IV_FALSE | temp_value<2> | IV_FALSE | temp_value<3> | IV_TRUE | temp_value<7> | IV_TRUE | temp_cnt1 | IV_FALSE | temp_cnt2
+
+FB_INSTANCE | FOOBAR1_ | WDT_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | NULL | 0 | LOAD_IBUF | 1 | NULL | 0 | 3 | 49152
+FBPIN | 3 | NULL | 0 | CLK_IBUF | 0 | NULL | 0 | 5 | 57344
+FBPIN | 6 | NULL | 0 | VALUE_0_IBUF | 1 | NULL | 0 | 8 | 49152
+FBPIN | 8 | NULL | 0 | VALUE_1_IBUF | 1 | NULL | 0 | 9 | 49152
+FBPIN | 9 | NULL | 0 | VALUE_2_IBUF | 1 | NULL | 0 | 11 | 49152
+FBPIN | 10 | NULL | 0 | VALUE_3_IBUF | 1 | NULL | 0 | 12 | 49152
+FBPIN | 11 | NULL | 0 | VALUE_4_IBUF | 1 | NULL | 0 | 13 | 49152
+FBPIN | 12 | NULL | 0 | VALUE_5_IBUF | 1 | NULL | 0 | 14 | 49152
+FBPIN | 13 | NULL | 0 | VALUE_6_IBUF | 1 | NULL | 0 | 18 | 49152
+FBPIN | 14 | NULL | 0 | VALUE_7_IBUF | 1 | NULL | 0 | 19 | 49152
+
+FB_INSTANCE | FOOBAR2_ | WDT_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | temp_value<2> | 1 | NULL | 0 | NULL | 0 | 1 | 49152
+FBPIN | 2 | EXP0_ | 1 | NULL | 0 | NULL | 0 | 44 | 49152
+FBPIN | 7 | o_RESET_OBUF | 1 | NULL | 0 | o_RESET | 1 | 38 | 49152
+FBPIN | 9 | temp_cnt2 | 1 | NULL | 0 | NULL | 0 | 36 | 49152
+FBPIN | 10 | temp_cnt1 | 1 | NULL | 0 | NULL | 0 | 35 | 49152
+FBPIN | 11 | temp_value<7> | 1 | NULL | 0 | NULL | 0 | 34 | 49152
+FBPIN | 12 | temp_value<6> | 1 | CNT_CLK_IBUF | 1 | NULL | 0 | 33 | 49152
+FBPIN | 13 | temp_value<5> | 1 | NULL | 0 | NULL | 0 | 29 | 49152
+FBPIN | 14 | temp_value<0> | 1 | NULL | 0 | NULL | 0 | 28 | 49152
+FBPIN | 15 | EXP1_ | 1 | NULL | 0 | NULL | 0 | 27 | 49152
+FBPIN | 16 | temp_value<4> | 1 | NULL | 0 | NULL | 0 | 26 | 49152
+FBPIN | 17 | temp_value<1> | 1 | NULL | 0 | NULL | 0 | 25 | 49152
+FBPIN | 18 | temp_value<3> | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | WDT_COPY_0_COPY_0 | 0 | 0 | 0
+
+BUSINFO | VALUE<7:0> | 8 | 0 | 0 | VALUE<0> | 7 | VALUE<1> | 6 | VALUE<2> | 5 | VALUE<3> | 4 | VALUE<4> | 3 | VALUE<5> | 2 | VALUE<6> | 1 | VALUE<7> | 0
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | VALUE<1> | 9 | 1 | VALUE<2> | 11 | 2 | temp_value<0> | NULL | 3 | temp_value<2> | NULL | 4 | VALUE<0> | 8
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 5 | VALUE<3> | 12 | 6 | temp_value<1> | NULL | 7 | temp_value<6> | NULL | 8 | temp_cnt1 | NULL | 9 | VALUE<4> | 13
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 10 | temp_cnt2 | NULL | 11 | CNT_CLK | 33 | 12 | temp_value<7> | NULL | 13 | VALUE<5> | 14 | 14 | temp_value<3> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 15 | temp_value<4> | NULL | 16 | temp_value<5> | NULL | 17 | VALUE<6> | 18 | 21 | VALUE<7> | 19 | 24 | LOAD | 3
+
+FB_IMUX_INDEX | FOOBAR2_ | 36 | 37 | 999 | 999 | 40 | 41 | 999 | 999 | 999 | 45 | 999 | 47 | 999 | 49 | 999 | 999 | 999 | 53 | -1 | -1 | -1 | 57 | -1 | -1 | 60 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | CLK_IBUF/FCLK | 0 | 0
+
+TIME_TSPEC | TS_CLK | PERIOD:CLK:1000.000nS:HIGH:500.000nS | CLK | 10003 | 10000 | 5000 | NULL

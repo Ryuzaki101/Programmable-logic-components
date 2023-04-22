@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/LineBuf/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/LineBuf/xst"
+elaborate
+-ifn LineBuf.prj
+-ifmt mixed

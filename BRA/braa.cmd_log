@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/BRA/braa.xst" -ofn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/BRA/braa.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/BRA/braa.xst" -ofn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/BRA/braa.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500xl braa.ngc braa.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper braa.ngd 
+XSLTProcess braa_build.xml 
+tsim -intstyle ise braa braa.nga 
+taengine -intstyle ise -f braa -w --format html1 -l braa_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n braa -i braa 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/BRA/braa.xst" -ofn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/BRA/braa.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500xl braa.ngc braa.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper braa.ngd 
+XSLTProcess braa_build.xml 
+tsim -intstyle ise braa braa.nga 
+hprep6 -s IEEE1149 -n braa -i braa 

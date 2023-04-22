@@ -1,0 +1,30 @@
+Command line:
+   SPI_RX_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62263
+
+Mon Dec 07 19:22:35 2015
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 357.552 Meg
+
+ Total Signals          : 21
+ Total Nets             : 65
+ Total Signal Drivers   : 13
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 7
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 550
+Total Line Count : 54
+Total Line Count : 54
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 672.141 Meg
+
+Mon Dec 07 19:24:01 2015
+

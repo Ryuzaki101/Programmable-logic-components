@@ -1,0 +1,13 @@
+V3 7
+EN work/aufg1 0 FL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/aufg1/behavior 0 \
+      FL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufg1.vhd EN work/aufg1 0 \
+      CP aufgabe1
+FL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufgabe1.vhd 2018/11/07.17:48:03 P.20131013
+EN work/aufgabe1 1541610290 \
+      FL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufgabe1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/aufgabe1/Behavioral 1541610291 \
+      FL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufgabe1.vhd \
+      EN work/aufgabe1 1541610290

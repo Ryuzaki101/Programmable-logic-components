@@ -1,0 +1,29 @@
+Command line:
+   akla_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60466
+
+Thu Nov 12 22:51:36 2015
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 361.673 Meg
+
+ Total Signals          : 8
+ Total Nets             : 22
+ Total Signal Drivers   : 4
+ Total Blocks           : 3
+ Total Primitive Blocks : 3
+ Total Processes        : 1
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 505
+Total Line Count : 12
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 361.673 Meg
+
+Thu Nov 12 22:51:41 2015
+

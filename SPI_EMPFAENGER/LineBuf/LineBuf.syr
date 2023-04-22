@@ -1,0 +1,461 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.32 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.32 secs
+ 
+--> Reading design: LineBuf.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LineBuf.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LineBuf"
+Output Format                      : NGC
+Target Device                      : xc4vfx12-12-sf363
+
+---- Source Options
+Top Module Name                    : LineBuf
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/LineBuf/ipcore_dir/Multiply.vhd" in Library work.
+Architecture multiply_a of Entity multiply is up to date.
+Compiling vhdl file "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/LineBuf/ipcore_dir/FIFO.vhd" in Library work.
+Architecture fifo_a of Entity fifo is up to date.
+Compiling vhdl file "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/LineBuf/LineBuf.vhd" in Library work.
+Entity <linebuf> compiled.
+Entity <linebuf> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <LineBuf> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <LineBuf> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/LineBuf/LineBuf.vhd" line 78: Instantiating black box module <Multiply>.
+WARNING:Xst:2211 - "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/LineBuf/LineBuf.vhd" line 87: Instantiating black box module <FIFO>.
+INFO:Xst:2679 - Register <u_rst> in unit <LineBuf> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <LineBuf> analyzed. Unit <LineBuf> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <LineBuf>.
+    Related source file is "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/LineBuf/LineBuf.vhd".
+WARNING:Xst:647 - Input <i_RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <pipi> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <kaka> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <TEMP<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <u_rd_en> equivalent to <o_LVAL> has been removed
+    Found 1-bit register for signal <o_LVAL>.
+    Found 2-bit up counter for signal <cnt>.
+    Found 8-bit register for signal <PIXEL>.
+    Found 1-bit register for signal <u_wr_en>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  10 D-type flip-flop(s).
+Unit <LineBuf> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 3
+ 1-bit register                                        : 2
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/Multiply.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/FIFO.ngc>.
+Loading core <Multiply> for timing and area information for instance <U_Multiply>.
+Loading core <FIFO> for timing and area information for instance <U_FIFO>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <LineBuf> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LineBuf, actual ratio is 2.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <U_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <U_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <U_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <U_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <U_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <U_FIFO> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : LineBuf.ngr
+Top Level Output File Name         : LineBuf
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 37
+
+Cell Usage :
+# BELS                             : 190
+#      GND                         : 2
+#      INV                         : 6
+#      LUT1                        : 17
+#      LUT2                        : 43
+#      LUT2_L                      : 1
+#      LUT3                        : 12
+#      LUT4                        : 26
+#      LUT4_D                      : 2
+#      LUT4_L                      : 1
+#      MUXCY                       : 52
+#      VCC                         : 2
+#      XORCY                       : 26
+# FlipFlops/Latches                : 172
+#      FD                          : 12
+#      FDC                         : 83
+#      FDCE                        : 53
+#      FDP                         : 12
+#      FDPE                        : 8
+#      FDR                         : 2
+#      FDSE                        : 2
+# RAMS                             : 1
+#      RAMB16                      : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 34
+#      IBUF                        : 17
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx12sf363-12 
+
+ Number of Slices:                      112  out of   5472     2%  
+ Number of Slice Flip Flops:            172  out of  10944     1%  
+ Number of 4 input LUTs:                108  out of  10944     0%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  36  out of    240    15%  
+ Number of FIFO16/RAMB16s:                1  out of     36     2%  
+    Number used as RAMB16s:               1
+ Number of GCLKs:                         2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_A                              | BUFGP                  | 99    |
+CLK_B                              | BUFGP                  | 76    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                               | Buffer(FF name)                                                                                                                                                                                  | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0)                                                                             | 38    |
+U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)                                                                             | 37    |
+U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/diff_pntr_pad_10)                                                                                   | 37    |
+U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_almost_empty_i)                                                                                     | 30    |
+N1(XST_VCC:P)                                                                                                                                | NONE(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN)                                                                                                                       | 6     |
+U_FIFO/N0(U_FIFO/XST_GND:G)                                                                                                                  | NONE(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 4     |
+U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                                                                                                       | 3     |
+U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/prog_full_i)                                                                                        | 3     |
+U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                                                                                                       | 2     |
+---------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -12
+
+   Minimum period: 2.422ns (Maximum Frequency: 412.865MHz)
+   Minimum input arrival time before clock: 3.990ns
+   Maximum output required time after clock: 5.168ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_A'
+  Clock period: 2.422ns (frequency: 412.865MHz)
+  Total number of paths / destination ports: 486 / 139
+-------------------------------------------------------------------------
+Delay:               2.422ns (Levels of Logic = 13)
+  Source:            u_wr_en (FF)
+  Destination:       U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/diff_pntr_pad_10 (FF)
+  Source Clock:      CLK_A rising
+  Destination Clock: CLK_A rising
+
+  Data Path: u_wr_en to U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/diff_pntr_pad_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             3   0.272   0.447  u_wr_en (u_wr_en)
+     begin scope: 'U_FIFO'
+     LUT2:I0->O           30   0.147   0.680  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1_1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1)
+     MUXCY:DI->O           1   0.280   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<0> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<0>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<1> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<1>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<2> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<2>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<3> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<3>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<4> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<4>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<5> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<5>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<6> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<6>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<7> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<7>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<8> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<8>)
+     MUXCY:CI->O           0   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<9> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<9>)
+     XORCY:CI->O           1   0.273   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_xor<10> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/diff_pntr_pad_add0000<10>)
+     FDC:D                     0.017          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gpf.wrpf/diff_pntr_pad_10
+    ----------------------------------------
+    Total                      2.422ns (1.295ns logic, 1.127ns route)
+                                       (53.5% logic, 46.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_B'
+  Clock period: 2.244ns (frequency: 445.603MHz)
+  Total number of paths / destination ports: 322 / 102
+-------------------------------------------------------------------------
+Delay:               2.244ns (Levels of Logic = 7)
+  Source:            U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_1 (FF)
+  Destination:       U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_almost_empty_i (FF)
+  Source Clock:      CLK_B rising
+  Destination Clock: CLK_B rising
+
+  Data Path: U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_1 to U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_almost_empty_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             3   0.272   0.565  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count<1>)
+     LUT4:I0->O            1   0.147   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/v1_0_and00001 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/v1<0>)
+     MUXCY:S->O            1   0.278   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/gmux.gm[0].gm1.m1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/carrynet<0>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/gmux.gm[1].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/carrynet<1>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/gmux.gm[2].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/carrynet<2>)
+     MUXCY:CI->O           1   0.034   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/gmux.gm[3].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/carrynet<3>)
+     MUXCY:CI->O           1   0.280   0.436  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/gae.c2/gmux.gm[4].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/comp2)
+     LUT3:I1->O            1   0.147   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_almost_empty_i_or00001 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_almost_empty_i_or0000)
+     FDPE:D                    0.017          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_almost_empty_i
+    ----------------------------------------
+    Total                      2.244ns (1.243ns logic, 1.001ns route)
+                                       (55.4% logic, 44.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_A'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              3.990ns (Levels of Logic = 2)
+  Source:            i_DATA<7> (PAD)
+  Destination:       sec_inst (DSP)
+  Destination Clock: CLK_A rising
+
+  Data Path: i_DATA<7> to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.754   0.266  i_DATA_7_IBUF (i_DATA_7_IBUF)
+     begin scope: 'U_Multiply'
+     begin scope: 'blk00000001'
+     SEC:in                    2.970          sec_inst
+    ----------------------------------------
+    Total                      3.990ns (3.724ns logic, 0.266ns route)
+                                       (93.3% logic, 6.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_B'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              5.168ns (Levels of Logic = 2)
+  Source:            U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (RAM)
+  Destination:       o_DATA<15> (PAD)
+  Source Clock:      CLK_B rising
+
+  Data Path: U_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP to o_DATA<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16:CLKB->DOB11    1   1.647   0.266  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP (dout<15>)
+     end scope: 'U_FIFO'
+     OBUF:I->O                 3.255          o_DATA_15_OBUF (o_DATA<15>)
+    ----------------------------------------
+    Total                      5.168ns (4.902ns logic, 0.266ns route)
+                                       (94.9% logic, 5.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 46.00 secs
+Total CPU time to Xst completion: 45.48 secs
+ 
+--> 
+
+Total memory usage is 293872 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

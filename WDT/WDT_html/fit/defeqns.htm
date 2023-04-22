@@ -1,0 +1,123 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+FDCPE_o_RESET: FDCPE port map (o_RESET,o_RESET_D,CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_RESET_D <= (NOT temp_value(0) AND NOT temp_value(1) AND NOT temp_value(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(3) AND NOT temp_value(4) AND NOT temp_value(5) AND NOT temp_value(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(7));
+</td></tr><tr><td>
+FDCPE_temp_cnt1: FDCPE port map (temp_cnt1,CNT_CLK,CLK,'0','0');
+</td></tr><tr><td>
+FDCPE_temp_cnt2: FDCPE port map (temp_cnt2,temp_cnt1,CLK,'0','0');
+</td></tr><tr><td>
+FDCPE_temp_value0: FDCPE port map (temp_value(0),temp_value_D(0),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp_value_D(0) <= ((LOAD AND NOT VALUE(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_cnt1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND temp_value(0) AND temp_cnt1 AND NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND NOT temp_value(4) AND NOT temp_value(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(6) AND NOT temp_value(7)));
+</td></tr><tr><td>
+FDCPE_temp_value1: FDCPE port map (temp_value(1),temp_value_D(1),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp_value_D(1) <= ((NOT LOAD AND NOT temp_value(1) AND NOT temp_value(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(3) AND NOT temp_value(4) AND NOT temp_value(5) AND NOT temp_value(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (LOAD AND NOT VALUE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND temp_value(0) AND NOT temp_value(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(1) AND NOT temp_cnt1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(1) AND temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	temp_cnt1 AND NOT temp_cnt2));
+</td></tr><tr><td>
+FDCPE_temp_value2: FDCPE port map (temp_value(2),temp_value_D(2),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp_value_D(2) <= ((NOT LOAD AND NOT temp_value(2) AND NOT temp_cnt1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(2) AND temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	temp_value(2) AND temp_cnt1 AND NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(2) AND NOT temp_value(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(4) AND NOT temp_value(5) AND NOT temp_value(6) AND NOT temp_value(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (LOAD AND NOT VALUE(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND temp_value(0) AND NOT temp_value(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND temp_value(1) AND NOT temp_value(2)));
+</td></tr><tr><td>
+FTCPE_temp_value3: FTCPE port map (temp_value(3),temp_value_T(3),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp_value_T(3) <= ((NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND temp_value(6) AND temp_cnt1 AND NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND temp_value(7) AND temp_cnt1 AND NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (LOAD AND temp_value(3) AND NOT VALUE(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (LOAD AND NOT temp_value(3) AND VALUE(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND temp_value(3) AND temp_cnt1 AND NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND temp_value(4) AND temp_cnt1 AND NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND temp_value(5) AND temp_cnt1 AND NOT temp_cnt2));
+</td></tr><tr><td>
+FTCPE_temp_value4: FTCPE port map (temp_value(4),temp_value_T(4),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp_value_T(4) <= ((NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND temp_value(6) AND temp_cnt1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND temp_value(7) AND temp_cnt1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (LOAD AND temp_value(4) AND NOT VALUE(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (LOAD AND NOT temp_value(4) AND VALUE(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND temp_value(4) AND temp_cnt1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND temp_value(5) AND temp_cnt1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_cnt2));
+</td></tr><tr><td>
+FTCPE_temp_value5: FTCPE port map (temp_value(5),temp_value_T(5),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp_value_T(5) <= ((LOAD AND temp_value(5) AND NOT VALUE(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (LOAD AND NOT temp_value(5) AND VALUE(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND NOT temp_value(4) AND temp_value(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	temp_cnt1 AND NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND NOT temp_value(4) AND temp_value(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	temp_cnt1 AND NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND NOT temp_value(4) AND temp_value(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	temp_cnt1 AND NOT temp_cnt2));
+</td></tr><tr><td>
+FTCPE_temp_value6: FTCPE port map (temp_value(6),temp_value_T(6),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp_value_T(6) <= ((LOAD AND temp_value(6) AND NOT VALUE(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (LOAD AND NOT temp_value(6) AND VALUE(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND NOT temp_value(4) AND NOT temp_value(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	temp_value(6) AND temp_cnt1 AND NOT temp_cnt2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND NOT temp_value(4) AND NOT temp_value(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	temp_value(7) AND temp_cnt1 AND NOT temp_cnt2));
+</td></tr><tr><td>
+FDCPE_temp_value7: FDCPE port map (temp_value(7),temp_value_D(7),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp_value_D(7) <= ((LOAD AND NOT VALUE(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT LOAD AND NOT temp_value(0) AND NOT temp_value(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(2) AND NOT temp_value(3) AND NOT temp_value(4) AND NOT temp_value(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT temp_value(6) AND temp_cnt1 AND NOT temp_cnt2));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

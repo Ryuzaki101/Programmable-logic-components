@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/versch1.1/rs.xst" -ofn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/versch1.1/rs.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500xl rs.ngc rs.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper rs.ngd 
+XSLTProcess rs_build.xml 
+tsim -intstyle ise rs rs.nga 
+taengine -intstyle ise -f rs -w --format html1 -l rs_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n rs -i rs 

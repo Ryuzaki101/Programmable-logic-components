@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/m/Desktop/OH/PLB/LABOR/AUFGABEKLAUSUR/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/m/Desktop/OH/PLB/LABOR/AUFGABEKLAUSUR/xst"
+elaborate
+-ifn DMO.prj
+-ifmt mixed

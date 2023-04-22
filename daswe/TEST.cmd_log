@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500xl TEST.ngc TEST.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper TEST.ngd 
+XSLTProcess TEST_build.xml 
+tsim -intstyle ise TEST TEST.nga 
+taengine -intstyle ise -f TEST -w --format html1 -l TEST_html/tim/timing_report.htm 

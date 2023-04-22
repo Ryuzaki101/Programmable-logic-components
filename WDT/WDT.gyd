@@ -1,0 +1,27 @@
+Pin Freeze File:  version P.68d
+
+953644PC XC9536-15-PC44
+CLK S:PIN5
+CNT_CLK S:PIN33
+LOAD S:PIN3
+VALUE<0> S:PIN8
+VALUE<1> S:PIN9
+VALUE<2> S:PIN11
+VALUE<3> S:PIN12
+VALUE<4> S:PIN13
+VALUE<5> S:PIN14
+VALUE<6> S:PIN18
+VALUE<7> S:PIN19
+o_RESET S:PIN38
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+
+PARTITION FB2_1 temp_value<2> EXP0_
+PARTITION FB2_7 o_RESET_OBUF
+PARTITION FB2_9 temp_cnt2 temp_cnt1 temp_value<7> temp_value<6>
+		 temp_value<5> temp_value<0> EXP1_ temp_value<4>
+		 temp_value<1> temp_value<3>
+

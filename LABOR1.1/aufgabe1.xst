@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/xst"
+elaborate
+-ifn aufgabe1.prj
+-ifmt mixed

@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/FIFO.vhd"
+vhdl work "ipcore_dir/Multiply.vhd"
+vhdl work "LineBuf.vhd"
+vhdl work "LineBuf_TB.vhd"

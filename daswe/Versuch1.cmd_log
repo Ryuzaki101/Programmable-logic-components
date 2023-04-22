@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/Versuch1.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/Versuch1.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/Versuch1.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/Versuch1.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500xl Versuch1.ngc Versuch1.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Versuch1.ngd 
+XSLTProcess Versuch1_build.xml 
+tsim -intstyle ise Versuch1 Versuch1.nga 
+taengine -intstyle ise -f Versuch1 -w --format html1 -l Versuch1_html/tim/timing_report.htm 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/Versuch1.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/Versuch1.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/Versuch1.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/daswe/Versuch1.syr" 

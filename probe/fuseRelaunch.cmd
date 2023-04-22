@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/m/Desktop/OH/PLB/LABOR/probe/pwm_tb_isim_beh.exe" -prj "C:/Users/m/Desktop/OH/PLB/LABOR/probe/pwm_tb_beh.prj" "work.pwm_tb" 

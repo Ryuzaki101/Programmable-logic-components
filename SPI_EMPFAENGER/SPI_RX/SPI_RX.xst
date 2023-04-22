@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/SPI_RX/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/m/Desktop/OH/PLB/LABOR/SPI_EMPFAENGER/SPI_RX/xst"
+elaborate
+-ifn SPI_RX.prj
+-ifmt mixed

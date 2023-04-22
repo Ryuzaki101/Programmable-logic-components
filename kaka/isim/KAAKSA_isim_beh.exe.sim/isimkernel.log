@@ -1,0 +1,29 @@
+Command line:
+   KAAKSA_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60501
+
+Thu Nov 12 23:03:16 2015
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 361.615 Meg
+
+ Total Signals          : 13
+ Total Nets             : 22
+ Total Signal Drivers   : 8
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 4
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 507
+Total Line Count : 30
+
+ Total Simulation Time: 20.3906 sec
+
+ Current Memory Usage: 361.615 Meg
+
+Thu Nov 12 23:09:49 2015
+

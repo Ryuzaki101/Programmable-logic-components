@@ -1,0 +1,9 @@
+V3 4
+FL C:/Users/m/Desktop/OH/PLB/LABOR/Labor1b/LATCH_MUX.vhd 2015/10/27.16:59:53 P.20131013
+FL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Labor1b/LATCH_MUX.vhd 2018/10/29.13:01:23 P.20131013
+EN work/LATCH_MUX 1540814497 \
+      FL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Labor1b/LATCH_MUX.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/LATCH_MUX/Behavioral 1540814498 \
+      FL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Labor1b/LATCH_MUX.vhd \
+      EN work/LATCH_MUX 1540814497

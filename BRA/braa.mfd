@@ -1,0 +1,27 @@
+MDF Database:  version 1.0
+MDF_INFO | braa | XC9536XL-5-PC44
+MACROCELL | 1 | 1 | O
+ATTRIBUTES | 8651698 | 0
+INPUTS | 3 | R  | CLK  | S
+INPUTP | 3 | 45 | 44 | 42
+EQ | 4 | 
+   Q.D = Gnd;
+   Q.CLK = Gnd;
+   Q.AP = !R & CLK & S;
+   Q.AR = R & CLK;
+
+MACROCELL | 0 | 1 | Qn_OBUF
+ATTRIBUTES | 8651702 | 0
+INPUTS | 3 | R  | CLK  | S
+INPUTP | 3 | 45 | 44 | 42
+EQ | 4 | 
+   Qn.D = Vcc;
+   Qn.CLK = Gnd;
+   Qn.AP = R & CLK;
+   Qn.AR = !R & CLK & S;
+
+PIN | CLK | 64 | 0 | N/A | 44 | 2 | 1 | 1 | 0 | 1
+PIN | R | 64 | 0 | N/A | 45 | 2 | 1 | 1 | 0 | 1
+PIN | S | 64 | 0 | N/A | 42 | 2 | 1 | 1 | 0 | 1
+PIN | Q | 536871040 | 0 | N/A | 5
+PIN | Qn | 536871040 | 0 | N/A | 8

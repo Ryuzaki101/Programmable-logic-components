@@ -1,0 +1,14 @@
+NET "CLK" TNM_NET = CLK;
+TIMESPEC TS_CLK = PERIOD "CLK" 1 MHz HIGH 50%;
+
+NET "CLK"  LOC = "P5"  ; 
+NET "DUTCYC<0>"  LOC = "P8"  ; 
+NET "DUTCYC<1>"  LOC = "P9"  ; 
+NET "DUTCYC<2>"  LOC = "P11"  ; 
+NET "DUTCYC<3>"  LOC = "P12"  ; 
+NET "DUTCYC<4>"  LOC = "P13"  ; 
+NET "DUTCYC<5>"  LOC = "P14"  ; 
+NET "DUTCYC<6>"  LOC = "P18"  ; 
+NET "DUTCYC<7>"  LOC = "P19"  ; 
+NET "EN"  LOC = "P3"  ; 
+NET "PWM_OUT"  LOC = "P38"  ; 

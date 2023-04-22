@@ -1,0 +1,18 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/m/Desktop/OH/PLB/LABOR/empfaenger/SPI_RX_TSB_isim_beh.exe -prj C:/Users/m/Desktop/OH/PLB/LABOR/empfaenger/SPI_RX_TSB_beh.prj work.SPI_RX_TSB 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/m/Desktop/OH/PLB/LABOR/empfaenger/SPI_RX.vhd" into library work
+Parsing VHDL file "C:/Users/m/Desktop/OH/PLB/LABOR/empfaenger/SPI_RX_TSB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity SPI_RX [spi_rx_default]
+Compiling architecture behavior of entity spi_rx_tsb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+ERROR:Simulator:904 - Unable to remove previous simulation file isim/SPI_RX_TSB_isim_beh.exe.sim/SPI_RX_TSB_isim_beh.exe. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: boost::filesystem::remove: Zugriff verweigert: "isim\SPI_RX_TSB_isim_beh.exe.sim\SPI_RX_TSB_isim_beh.exe"
+ERROR:Simulator:861 - Failed to link the design

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR2PWM/PWM_TB_isim_beh.exe" -prj "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR2PWM/PWM_TB_beh.prj" "work.PWM_TB" 

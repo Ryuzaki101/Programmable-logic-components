@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufgabe1.xst" -ofn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufgabe1.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufgabe1.xst" -ofn "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR1.1/aufgabe1.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500xl aufgabe1.ngc aufgabe1.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper aufgabe1.ngd 
+XSLTProcess aufgabe1_build.xml 
+tsim -intstyle ise aufgabe1 aufgabe1.nga 
+taengine -intstyle ise -f aufgabe1 -w --format html1 -l aufgabe1_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n aufgabe1 -i aufgabe1 

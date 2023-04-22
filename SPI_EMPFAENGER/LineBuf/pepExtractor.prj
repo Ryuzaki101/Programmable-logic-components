@@ -1,0 +1,3 @@
+work	"LineBuf.vhd"
+work	"ipcore_dir/FIFO.vhd"
+work	"ipcore_dir/Multiply.vhd"

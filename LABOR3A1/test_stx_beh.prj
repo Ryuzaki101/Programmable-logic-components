@@ -1,0 +1,2 @@
+vhdl isim_temp "CLKDIVIDER.vhd"
+vhdl isim_temp "test.vhd"

@@ -1,0 +1,6 @@
+AR spi_rx behavioral C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/SPI_RX.vhd sub00/vhpl01 1549046521
+AR elevator behavioral C:/Users/m/Desktop/OH/PLB/LABOR/Elevator/ELEVATOR.vhd sub00/vhpl05 1449515834
+EN elevator NULL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/ELEVATOR.vhd sub00/vhpl04 1549046524
+EN spi_rx NULL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/SPI_RX.vhd sub00/vhpl00 1549046520
+EN watchdog NULL C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/WATCHDOG.vhd sub00/vhpl02 1549046522
+AR watchdog behavioral C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/WATCHDOG.vhd sub00/vhpl03 1549046523

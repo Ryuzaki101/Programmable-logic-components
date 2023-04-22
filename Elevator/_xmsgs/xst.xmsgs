@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ELEVATOR</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/m/Desktop/OH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ELEVATOR/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/m/Desktop/OH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/SPI_RX</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/m/Desktop/OH/PLB/LABOR/Elevator/SPI_RX.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/SPI_RX.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/SPI_RX/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/m/Desktop/OH/PLB/LABOR/Elevator/SPI_RX.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/SPI_RX.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/WATCHDOG</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/m/Desktop/OH/PLB/LABOR/Elevator/WATCHDOG.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/WATCHDOG.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/WATCHDOG/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/m/Desktop/OH/PLB/LABOR/Elevator/WATCHDOG.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/WATCHDOG.vhd</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot; Line <arg fmt="%d" index="2">136</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">n</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot; Line <arg fmt="%d" index="2">136</arg>. <arg fmt="%s" index="3">n</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="164" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot; Line <arg fmt="%d" index="2">136</arg>. <arg fmt="%s" index="3">parse error, unexpected END, expecting OPENPAR or TICK or LSQBRACK</arg>
+</msg>
+
+<msg type="error" file="HDLParsers" num="164" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot; Line <arg fmt="%d" index="2">173</arg>. <arg fmt="%s" index="3">parse error, unexpected PROCESS, expecting IF</arg>
+</msg>
+
+<msg type="error" file="HDLParsers" num="164" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot; Line <arg fmt="%d" index="2">175</arg>. <arg fmt="%s" index="3">parse error, unexpected PROCESS</arg>
+</msg>
+
+<msg type="warning" file="HDLParsers" num="901" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot; Line <arg fmt="%d" index="2">175</arg>. Label <arg fmt="%s" index="3">out_ELEVATOR</arg> is ignored.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3011" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/Elevator/ELEVATOR.vhd</arg>&quot; Line <arg fmt="%d" index="2">208</arg>. End Identifier <arg fmt="%s" index="3">out_ELEVATOR</arg> does not match declaration, <arg fmt="%s" index="4">UE_ELEVATOR</arg>.
+</msg>
+
+</messages>
+

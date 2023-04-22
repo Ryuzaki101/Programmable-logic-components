@@ -1,0 +1,2 @@
+vhdl work "pwmpro.vhd"
+vhdl work "pwm_tb.vhd"

@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500xl CLKDIVIDER.ngc CLKDIVIDER.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper CLKDIVIDER.ngd 
+XSLTProcess CLKDIVIDER_build.xml 
+tsim -intstyle ise CLKDIVIDER CLKDIVIDER.nga 
+taengine -intstyle ise -f CLKDIVIDER -w --format html1 -l CLKDIVIDER_html/tim/timing_report.htm 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.syr" 
+xst -intstyle ise -ifn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.xst" -ofn "C:/Users/m/Desktop/OH/PLB/LABOR/LABOR3A1/CLKDIVIDER.syr" 

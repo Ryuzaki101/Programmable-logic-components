@@ -1,0 +1,2 @@
+vhdl isim_temp "SPI_RX.vhd"
+vhdl isim_temp "SPI_RX_TB.vhd"

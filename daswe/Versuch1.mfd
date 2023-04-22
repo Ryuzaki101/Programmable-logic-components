@@ -1,0 +1,12 @@
+MDF Database:  version 1.0
+MDF_INFO | Versuch1 | XC9536XL-5-PC44
+MACROCELL | 0 | 1 | C_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 2 | B  | A
+INPUTP | 2 | 45 | 44
+EQ | 1 | 
+   !C = !B & !A;
+
+PIN | B | 64 | 0 | N/A | 45 | 1 | 0 | 1
+PIN | A | 64 | 0 | N/A | 44 | 1 | 0 | 1
+PIN | C | 536871040 | 0 | N/A | 8

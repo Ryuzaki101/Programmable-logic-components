@@ -1,0 +1,2 @@
+vhdl isim_temp "WDT.vhd"
+vhdl isim_temp "WDT_TB.vhd"

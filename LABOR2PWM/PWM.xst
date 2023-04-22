@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR2PWM/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/LABOR2PWM/xst"
+elaborate
+-ifn PWM.prj
+-ifmt mixed

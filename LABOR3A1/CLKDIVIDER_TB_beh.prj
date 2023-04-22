@@ -1,0 +1,2 @@
+vhdl work "CLKDIVIDER.vhd"
+vhdl work "CLKDIVIDER_TB.vhd"

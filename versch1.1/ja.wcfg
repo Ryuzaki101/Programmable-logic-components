@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/m/Desktop/OH/SIXTH/PLB/LABOR/versch1.1/rsTB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="rstb" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/rstb/r" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r</obj_property>
+      <obj_property name="ObjectShortName">r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rstb/s" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s</obj_property>
+      <obj_property name="ObjectShortName">s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rstb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rstb/q" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rstb/qn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qn</obj_property>
+      <obj_property name="ObjectShortName">qn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rstb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rstb/uut/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[2:0]</obj_property>
+      <obj_property name="ObjectShortName">i[2:0]</obj_property>
+   </wvobject>
+</wave_config>

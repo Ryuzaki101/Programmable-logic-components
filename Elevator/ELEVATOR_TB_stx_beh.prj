@@ -1,0 +1,4 @@
+vhdl isim_temp "WATCHDOG.vhd"
+vhdl isim_temp "SPI_RX.vhd"
+vhdl isim_temp "ELEVATOR.vhd"
+vhdl isim_temp "ELEVATOR_TB.vhd"
